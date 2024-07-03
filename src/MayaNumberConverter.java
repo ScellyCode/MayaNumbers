@@ -11,13 +11,8 @@ public class MayaNumberConverter {
     }
 
     private void numberToMaya(int num) {
-        StringBuilder stringBuilder = new StringBuilder();
-        for (int i = 0; i < num / 5; i++) {
-            stringBuilder.append("|");
-        }
-        for (int i = 0; i < num % 5; i++) {
-            stringBuilder.append(".");
-        }
-        System.out.println(stringBuilder.toString());
+        String stringBuilder = "|".repeat(Math.max(0, num / 5)) +
+                ".".repeat(Math.max(0, num % 5));
+        System.out.println(stringBuilder);
     }
 }
