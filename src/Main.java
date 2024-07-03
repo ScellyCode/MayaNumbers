@@ -1,5 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        new MayaNumberConverter(5222);
+        new MayaNumberConverter(768932746);
     }
 }
